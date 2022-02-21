@@ -1,0 +1,15 @@
+package sv.edu.udb.ejercicio_1;
+
+import javax.swing.JOptionPane;
+
+public class Radio {
+	
+	private double getRadio;
+	
+	public Radio (double getRadio) {
+		this.getRadio = getRadio;
+		
+		getRadio = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el radio de la esfera en mm", "CALCULAR AREA DE UNA ESFERA", 3));
+	}
+	
+}

@@ -1,0 +1,22 @@
+package sv.edu.udb.ejercicio_8;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio8 {
+
+	public static void main(String[] args) {
+		int num=0;
+		int numbers[] = new int [3] ;
+		float average = 0;
+
+		num=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la cantidad de numeros que desea operar"));
+		
+		
+		for (int i = 0; i <= num; i++) {
+			numbers[i]= Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese su numero " + (i + 1) + " ", "Numero"));
+		}
+
+		//average = numbers.length/;
+	}
+
+}

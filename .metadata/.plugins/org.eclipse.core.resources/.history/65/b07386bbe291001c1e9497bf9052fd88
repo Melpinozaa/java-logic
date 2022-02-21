@@ -1,0 +1,39 @@
+package sv.edu.udb.ejercicio_1;
+import javax.swing.*;
+import java.math.*;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+
+
+public class EJercicio1 {
+	public static void main (String[] args) {	
+		
+		DecimalFormatSymbols simbolo = new DecimalFormatSymbols();
+		  simbolo.setDecimalSeparator('.');
+		  DecimalFormat formateador = new DecimalFormat("####.##",simbolo);
+		
+		double radio;
+	
+	
+	radio = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el radio de su esfera en mm", "ESFERA", 3));
+	
+	
+	
+	double getarea= (4*Math.PI)*Math.pow(radio, 2);
+	
+	double area = getarea/100;
+	
+	double getdiam = 2*radio; 
+	
+	double diam = getdiam/10;
+	
+	double getvol = (((4/3)*Math.PI)*Math.pow(radio, 3))/3;
+	double vol = getvol/1000;
+	
+	
+	
+	JOptionPane.showMessageDialog(null, "El Radio de su esfera es: "+Double.valueOf(formateador.format(radio))+ "\n" + "\n" + "El area de su Esfera es: "+Double.valueOf(formateador.format(area))+"cm²"+ "\n" + "\n" +"El diametro de su esfera es: "+Double.valueOf(formateador.format(diam))+"cm"+ "\n" + "\n" + "El volumen de su esfera es: "+Double.valueOf(formateador.format(vol))+"cm³", "Resultado", 3 );
+		
+	}
+
+}

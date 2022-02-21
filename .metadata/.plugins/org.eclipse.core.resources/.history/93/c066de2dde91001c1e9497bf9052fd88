@@ -1,0 +1,20 @@
+package sv.edu.udb.ejercicio_1;
+import javax.swing.*;
+import java.math.*;
+
+
+public class EJercicio1 {
+
+	public static void main (String[] args) {	
+		
+		double radio;
+	
+	
+	radio = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el radio de su esfera en mm", "ESFERA", 3));
+	
+	radio=Math.pow(radio, 2);
+	
+	
+		
+	}
+}

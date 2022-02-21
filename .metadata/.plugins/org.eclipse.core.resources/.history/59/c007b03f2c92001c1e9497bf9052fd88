@@ -1,0 +1,57 @@
+package sv.edu.udb.ejercicio_8;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio8 {
+
+	public static void main(String[] args) {
+		int average = 0;
+		int zeros = 0;
+
+		int num = Integer
+				.parseInt(JOptionPane.showInputDialog(null, "Ingrese la cantidad de numeros que desea operar"));
+
+		int numbers[] = new int[num];
+		int highest = numbers[0];
+		int lower = numbers[0];
+		int sum = 0;
+		String outputdata = "";
+		String outputhighest= "";
+		String outputlower= "";
+		
+		for (int i = 0; i < numbers.length; i++) {
+			numbers[i] = Integer
+					.parseInt(JOptionPane.showInputDialog(null, "Ingrese su numero " + (i + 1) + " ", "Numero"));
+			outputdata += "Num " + (i + 1) + " -      " + numbers[i] + "\n";
+			sum = sum + numbers[i];
+		}
+
+		average = sum / numbers.length;
+		for (int i = 0; i < numbers.length; i++) {
+			if (numbers[i] > highest) {
+				highest = numbers[i];
+				outputhighest += "Num " + (i + 1) + " -      " + highest;
+			}
+			if (numbers[i]< lower) {
+				lower = numbers[i];
+				outputlower	+= "Num " + (i + 1) + " -      " + lower;
+			}
+			
+		}
+		
+		for (int i : numbers) {
+			
+			
+			if (num==0) {
+				zeros++;
+			}
+			
+		}
+
+		JOptionPane.showMessageDialog(null, "Datos del arreglo" + "\n" + "\n" + outputdata + "\n" + "\n"
+				+ "El Promedio de los numeros ingresados es: " + "\n" + average+"\n"+"El Mayor de los valores positivos ingresados: "+ "\n" + outputhighest
+				+"\n"+"El Mayor de los valores negativos ingresados: "+ "\n" + outputlower, "Result", 3);
+
+	}
+
+}

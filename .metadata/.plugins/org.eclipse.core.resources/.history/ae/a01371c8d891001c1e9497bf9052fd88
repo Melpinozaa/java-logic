@@ -1,0 +1,19 @@
+package sv.edu.udb.ejercicio_1;
+import javax.swing.*;
+
+
+public class EJercicio1 {
+
+	public static void main (String[] args) {
+		
+		float radio;
+		double volume, area;
+		
+		
+		radio = Float.parseFloat(JOptionPane.showInputDialog(null, "Ingrese el radio de la esfera en mm", "CALCULAR AREA DE UNA ESFERA", 3));
+		
+	}
+	
+	
+	
+}

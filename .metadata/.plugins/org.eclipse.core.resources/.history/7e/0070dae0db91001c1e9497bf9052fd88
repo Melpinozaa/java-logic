@@ -1,0 +1,23 @@
+package sv.edu.udb.ejercicio_1;
+import javax.swing.*;
+
+
+public class EJercicio1 {
+
+	public static void main (String[] args) {
+		//double volume, area;
+		
+	Radio radio = new Radio (0);
+		
+	}
+	
+	public static float getarea() {
+		
+		
+		
+		return 0;
+		
+		
+	}
+	
+}

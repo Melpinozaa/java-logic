@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\botal\Desktop\Guia1T\.metadata\.plugins\org.eclipse.jdt.core
+2724022854.index
+1865797976.index
+2615560850.index

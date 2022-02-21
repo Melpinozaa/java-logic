@@ -1,0 +1,31 @@
+package sv.edu.udb.ejercicio_4;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio4 {
+
+	public static void main(String[] args) {
+		
+		
+		String name = JOptionPane.showInputDialog(null, "Ingrese su nombre: ");
+		float weight = Float.parseFloat(JOptionPane.showInputDialog(null, "Ingrese su peso: "));
+		float height = Float.parseFloat(JOptionPane.showInputDialog(null, "Ingrese su altura en cm"));
+		
+		
+		double imc = weight/Math.pow(height, 2);
+		
+		if(imc<18.5){
+			  JOptionPane.showMessageDialog(null, ""+name+ "\n" + "\n" +" Infrapeso:  "+imc+"  IMC","IMC", 3);
+			}else if(imc >= 18.5 && imc <= 24.9){
+				JOptionPane.showMessageDialog(null, ""+name+ "\n" + "\n" +" peso normal:  "+imc+"  IMC","IMC", 3);
+			}else if(imc >= 25 && imc <= 29.9){
+				JOptionPane.showMessageDialog(null, ""+name+ "\n" + "\n" +" Sobrepeso:  "+imc+"  IMC","IMC", 3);
+			}else if(imc >= 30.0 && imc <= 40.0){
+				JOptionPane.showMessageDialog(null, ""+name+ "\n" + "\n" +" Obesidad:  "+imc+"  IMC","IMC", 3);
+			}else if(imc >= 40.0 ){
+				JOptionPane.showMessageDialog(null, ""+name+ "\n" + "\n" +" Obesidad Morbida:  "+imc+"  IMC","IMC", 3);
+			}
+		
+	}
+
+}

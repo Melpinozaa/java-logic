@@ -1,0 +1,25 @@
+package sv.edu.udb.ejercicio_7;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio7 {
+public static void main(String[] args) {
+	
+	
+	int num = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el numero del que quiere su tabla de multiplicar:"));
+	String output = "";
+	
+    for (int x=1;x<=10;x++){
+           for(int y=1;y<=x;y++)
+               num=x*y;
+           output += " * " + x + "=" + num;
+
+		output += "\n";
+
+       }
+
+       JOptionPane.showMessageDialog(null,output,"Result",JOptionPane.INFORMATION_MESSAGE);
+
+	
+}
+}
